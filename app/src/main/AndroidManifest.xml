@@ -3,6 +3,8 @@
     package="com.example.developer1.lokasyonreklamotv">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,11 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".AlertOnProximityReceiver"  android:exported="false">
-            <intent-filter>
-                <action android:name="com.example.developer1.lokasyonreklamotv.LOCATION_CHANGED"/>
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
